@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Staatliches"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/my_style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and(max-width: 768px)"
+      href="css/my_mobile.css"
+    />
+
+    <!-- tool.dynamicdrive.com/favicon -->
+    <link rel="shortcut icon" href="image/x-icon" href="favicon.ico" />
+
+    <title>NewsGrid | Latest News</title>
+  </head>
+  <body>
+    <!-- navbar created using grid instead of flex - an example of flex navbar is in chapter 7 edgeledger website -->
+
+    <!-- #main-nav>.container>img[src="img/logo.png" alt="NewsGrid"].logo+.social>a[href="http://facebook.com" target="_blank"]>i.fab.fa-facebook.fa-2x -->
+
+    <nav id="main-nav">
+      <!-- container is the actual grid item -->
+      <div class="container">
+        <img src="img/logo.png" alt="NewsGrid" class="logo" />
+        <div class="social">
+          <a href="http://facebook.com" target="_blank"
+            ><i class="fab fa-facebook fa-2x"></i
+          ></a>
+          <a href="http://twitter.com" target="_blank"
+            ><i class="fab fa-twitter fa-2x"></i
+          ></a>
+          <a href="http://instagram.com" target="_blank"
+            ><i class="fab fa-instagram fa-2x"></i
+          ></a>
+          <a href="http://youtube.com" target="_blank"
+            ><i class="fab fa-youtube fa-2x"></i
+          ></a>
+        </div>
+        <!-- ul>li*2>a.current[href="index.html"]{Home} -->
+        <ul>
+          <li><a href="my_index.html" class="current">Home</a></li>
+          <li><a href="my_about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+
+    <!-- header#showcase>.container>.showcase-container>.showcase-content>.category.category-sports{Sports}+h1{SomeSports Articles}+(p>lorem30)+a[href="article.html"].btn.btn-primary{Read More} -->
+    <header id="showcase">
+      <div class="container">
+        <!-- going to have only one grid item. normally flex would be used for this -->
+        <div class="showcase-container">
+          <div class="showcase-content">
+            <div class="category category-sports">Sports</div>
+            <h1>Some Sports Articles</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+              suscipit. Ut necessitatibus pariatur deleniti officiis voluptas
+              minima eaque molestiae adipisci, dolore tempora eos asperiores
+              fugit laborum sed quod quos odio?
+            </p>
+            <a href="article.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Home Articles -->
+
+    <!-- section#home-articles.py-2>.container>h2{Editor Picks}+.articles-container>(article.card>img[src="img/articles/ent1.jpg"alt=""]+div>.category.category-ent{Entertainment}+(h3>a[href="article.html"]{Lorem ipsum dolor sit amet})+p>lorem20)*7 -->
+    <section id="home-articles" class="py-2">
+      <div class="container">
+        <h2>Editor Picks</h2>
+        <div class="articles-container">
+          <article class="card">
+            <img src="img/articles/ent1.jpg" alt="" />
+            <div>
+              <div class="category category-ent">Entertainment</div>
+              <h3><a href="article.html">Lorem ipsum dolor sit amet</a></h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem
+                maxime animi adipisci sequi eum dolor. Aliquam rem harum vitae
+                ducimus.
+              </p>
+            </div>
+          </article>
+          <article class="card bg-dark">
+            <div class="category category-sports">Sports</div>
+            <h3><a href="article.html">Lorem ipsum dolor sit amet</a></h3>
+            <p>
+              Aspernatur et quisquam quo molestias possimus cupiditate dolorum
+              libero architecto, corrupti vero rem odit totam temporibus
+              veritatis, laboriosam repudiandae quidem?
+            </p>
+          </article>
+          <article class="card">
+            <img src="img/articles/tech1.jpg" alt="" />
+            <div class="category category-tech">Technology</div>
+            <h3><a href="article.html">Lorem ipsum dolor sit amet</a></h3>
+            <p>
+              Possimus atque dignissimos ex in reprehenderit nam vitae natus
+              labore. Incidunt sit saepe dolorum odit, necessitatibus commodi
+              hic velit vero.
+            </p>
+          </article>
+          <article class="card">
+            <div class="category category-sports">Sports</div>
+            <h3><a href="article.html">Lorem ipsum dolor sit amet</a></h3>
+            <p>
+              Distinctio voluptatem inventore architecto sit debitis qui eius
+              laborum quia perspiciatis cupiditate? Sequi saepe laboriosam
+              voluptatum neque magnam, voluptatibus ipsum.
+            </p>
+            <img src="img/articles/sports1.jpg" alt="" />
+          </article>
+          <article class="card">
+            <img src="img/articles/tech2.jpg" alt="" />
+            <div>
+              <div class="category category-tech">Technology</div>
+              <h3><a href="article.html">Lorem ipsum dolor sit amet</a></h3>
+              <p>
+                Mollitia ut accusantium maxime eum unde placeat blanditiis
+                voluptatem totam, facere perferendis quo dolore quam illo dicta
+                recusandae omnis soluta.
+              </p>
+            </div>
+          </article>
+          <article class="card bg-primary">
+            <div class="category category-sports">Sports</div>
+            <h3><a href="article.html">Lorem ipsum dolor sit amet</a></h3>
+            <p>
+              Adipisci nemo, perspiciatis eveniet ab animi commodi dolor
+              praesentium facilis possimus reprehenderit magnam consequuntur
+              iure harum eos sapiente saepe vitae.
+            </p>
+          </article>
+          <article class="card">
+            <div>
+              <div class="category category-ent">Entertainment</div>
+              <h3><a href="article.html">Lorem ipsum dolor sit amet</a></h3>
+              <p>
+                Omnis tenetur dignissimos ratione. Laboriosam id eaque
+                asperiores natus deserunt. Vel aperiam ducimus quaerat odit
+                aliquid sit ipsa distinctio officiis!
+              </p>
+            </div>
+            <img src="img/articles/ent2.jpg" alt="" />
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer id="main-footer" class="py-2">
+      <div class="container footer-container">
+        <div>
+          <img src="img/logo_light.png" alt="NewsGrid" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            consectetur exercitationem quibusdam ullam consequatur voluptate
+            modi provident quo. Inventore, odio.
+          </p>
+        </div>
+        <div>
+          <h3>Email Newsletter</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, non?
+          </p>
+          <form>
+            <input type="email" placeholder="Enter Email..." />
+            <input type="submit" value="Subscribe" class="btn btn-primary" />
+          </form>
+        </div>
+        <div>
+          <h3>Site Links</h3>
+          <ul class="list">
+            <li><a href="#">Help & Support</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Join Our Club</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores,
+            maxime.
+          </p>
+          <a href="#" class="btn btn-secondary">Join Now</a>
+        </div>
+        <div>
+          <p>copyright &copy; 2021, All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
